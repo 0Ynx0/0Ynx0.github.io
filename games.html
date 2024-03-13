@@ -19,30 +19,39 @@
         border-radius: 20px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
     }
 
-    .image-button {
+    .button {
         display: inline-block;
+        padding: 10px 20px;
         margin: 10px;
-        padding: 0;
-        border: none;
-        border-radius: 10px;
-        background: url('main/GameImages/Retro_Bowl_cover.png') no-repeat center center;
-        background-size: cover;
-        width: 200px; /* Adjust as needed */
-        height: 50px; /* Adjust as needed */
+        border-radius: 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
         cursor: pointer;
+        transition: background-color 0.3s;
     }
 
-    .image-button:focus {
-        outline: none;
+    .button:hover {
+        background-color: #0056b3;
+    }
+
+    .game-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        border-radius: 10px;
     }
 </style>
 </head>
 <body>
 <div class="container">
     <h1>Games</h1>
-    <button class="image-button" onclick="window.open('https://www.phantomgames.dev/game/retro-bowl/index.html', '_blank')"></button>
+    <a class="button" href="#">Back to Games</a>
+    <img class="game-image" src="main/GameImages/Retro_Bowl_cover.png" alt="Retro Bowl">
 </div>
 </body>
 </html>
